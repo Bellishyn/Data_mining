@@ -1,0 +1,113 @@
+object Form2: TForm2
+  Left = 338
+  Height = 221
+  Top = 32
+  Width = 350
+  Caption = 'Form2'
+  ClientHeight = 221
+  ClientWidth = 350
+  DesignTimePPI = 120
+  LCLVersion = '4.4.0.0'
+  OnCreate = FormCreate
+  object Image1: TImage
+    Left = 0
+    Height = 37
+    Top = 0
+    Width = 320
+    OnMouseDown = Image1MouseDown
+    OnMouseMove = Image1MouseMove
+    OnMouseUp = Image1MouseUp
+  end
+  object Panel1: TPanel
+    Left = 5
+    Height = 160
+    Top = 48
+    Width = 334
+    ClientHeight = 160
+    ClientWidth = 334
+    TabOrder = 0
+    object Edit1: TEdit
+      Left = 56
+      Height = 28
+      Top = 40
+      Width = 100
+      TabOrder = 0
+      Text = 'Edit1'
+      OnExit = Edit1Exit
+      OnKeyPress = Edit1KeyPress
+    end
+    object Label2: TLabel
+      Left = 8
+      Height = 20
+      Top = 44
+      Width = 28
+      Caption = 'Min:'
+    end
+    object Label3: TLabel
+      Left = 184
+      Height = 20
+      Top = 44
+      Width = 31
+      Caption = 'Max:'
+    end
+    object Panel3: TPanel
+      Left = 218
+      Height = 45
+      Top = 33
+      Width = 112
+      Caption = 'Panel3'
+      TabOrder = 2
+      OnPaint = Panel3Paint
+    end
+    object Edit2: TEdit
+      Left = 224
+      Height = 28
+      Top = 40
+      Width = 100
+      TabOrder = 1
+      Text = 'Edit2'
+      OnExit = Edit2Exit
+      OnKeyPress = Edit2KeyPress
+    end
+    object Panel4: TPanel
+      Left = 112
+      Height = 40
+      Top = 96
+      Width = 112
+      Caption = 'Aceptar'
+      TabOrder = 3
+      OnClick = Panel4Click
+      OnMouseEnter = Panel4MouseEnter
+      OnMouseLeave = Panel4MouseLeave
+      OnPaint = Panel4Paint
+    end
+    object Panel2: TPanel
+      Left = 50
+      Height = 45
+      Top = 33
+      Width = 112
+      Caption = 'Panel2'
+      TabOrder = 4
+      OnPaint = Panel2Paint
+    end
+  end
+  object Label1: TLabel
+    Left = 152
+    Height = 20
+    Top = 8
+    Width = 44
+    Caption = 'Label1'
+    OnMouseDown = Label1MouseDown
+    OnMouseMove = Label1MouseMove
+    OnMouseUp = Label1MouseUp
+  end
+  object Image2: TImage
+    Left = 292
+    Height = 25
+    Top = 7
+    Width = 22
+    OnClick = Image2Click
+    OnMouseEnter = Image2MouseEnter
+    OnMouseLeave = Image2MouseLeave
+  end
+end
